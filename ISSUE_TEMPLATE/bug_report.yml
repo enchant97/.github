@@ -1,0 +1,54 @@
+name: Bug Report
+description: File a bug/issue report
+title: "(BUG) <title>"
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered (also search closed).
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: checkboxes
+    attributes:
+      label: Is This A Security Issue?
+      description: Use GitHub's security reporting feature (or contact owner directly)
+      options:
+        - label: This is not a security issue
+          required: true
+  - type: textarea
+    attributes:
+      label: Describe The Problem
+      description: A description of what you're experiencing.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A description of what you expect to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Environment
+      description: A description of your setup (OS, install method, etc).
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Extra Context
+      description: Extra stuff, such as screenshots, link and references
+    validations:
+      required: false

@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an idea for this project
+title: "(feat) <title>"
+labels: [enhancement]
+body:
+  - type: checkboxes
+    attributes:
+      label: Does it fit the projects scope?
+      description: If you are unsure if it fits the scope, use the discussions.
+      options:
+        - label: This is relevant
+          required: true
+  - type: textarea
+    attributes:
+      label: Why?
+      description: Description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Solution?
+      description: Description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Alternatives?
+      description: Any alternative solutions or features you've considered
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Extra Context
+      description: Extra stuff, such as screenshots, link and references
+    validations:
+      required: false
